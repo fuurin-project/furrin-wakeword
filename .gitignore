@@ -1,0 +1,23 @@
+.agents/
+.codex/
+.pytest_cache/
+.venv/
+__pycache__/
+*.py[cod]
+:memory:.ses
+
+# Generated corpora and embedding caches are reproducible and can be very large.
+data/
+runs/
+
+# Training creates candidate heads here. Only promoted runtime artifacts are tracked.
+artifacts/*
+!artifacts/fuurin_frontend.npz
+!artifacts/fuurin_embed.pt
+!artifacts/hey_pico_head.pt
+!artifacts/hey_nordic_head.npz
+
+# Local diagnostics and recordings must not enter source control.
+diagnostics/
+recordings/
+*.wav

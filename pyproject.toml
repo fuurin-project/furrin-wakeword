@@ -1,0 +1,21 @@
+[project]
+name = "openwakeword-distillation"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "ai-edge-litert==2.2.0",
+  "numpy>=2.0",
+  "openwakeword @ git+https://github.com/dscripka/openWakeWord.git@368c03716d1e92591906a84949bc477f3a834455",
+  "scikit-learn>=1.9",
+  "sounddevice>=0.5",
+  "soundfile>=0.14",
+  "torch>=2.11",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+data = ["piper-tts==1.7.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
