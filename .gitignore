@@ -14,7 +14,9 @@ runs/
 artifacts/*
 !artifacts/fuurin_frontend.npz
 !artifacts/fuurin_embed.pt
+!artifacts/fuurin_embed.tflite
 !artifacts/hey_pico_head.pt
+!artifacts/hey_pico_head.tflite
 !artifacts/hey_nordic_head.npz
 
 # Local diagnostics and recordings must not enter source control.

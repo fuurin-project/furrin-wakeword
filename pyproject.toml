@@ -15,6 +15,9 @@ dependencies = [
 [project.optional-dependencies]
 test = ["pytest>=8"]
 data = ["piper-tts==1.7.0"]
+export = [
+    "tensorflow-cpu>=2.20,<2.21",
+]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
